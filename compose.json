@@ -1,0 +1,50 @@
+{
+    "name": "niobio/framework",
+    "description": "The Niobio Framework.",
+    "keywords": ["framework", "niobio"],
+    "license": "MIT",
+    "homepage": "https://github.com/niobio/framework",
+    "support": {
+        "issues": "https://github.com/niobio/framework/issues",
+        "source": "https://github.com/niobio/framework"
+    },
+    "authors": [
+        {
+            "name": "Antério Vieira",
+            "email": "anteriovieira@gmail.com"
+        },
+        {
+            "name": "Leandro Ximenes",
+            "email": "leandroj.r.ximenes@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5|^8.0"
+    },
+    "autoload": {
+        "files": [
+            "src/Niobio/Support/helpers.php"
+        ],
+        "psr-4": {
+            "Niobio\\": "src/Niobio/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Niobio\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
